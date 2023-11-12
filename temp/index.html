@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de Promotion</title>
+</head>
+<body>
+    <h1>Formulaire de Promotion</h1>
+    <form action="/promo" method="post">
+        <label for="nomPromotion">Nom de la promotion:</label>
+        <input type="text" id="nomPromotion" name="nomPromotion" required><br><br>
+
+        <label for="filiere">Filière:</label>
+        <input type="text" id="filiere" name="filiere" required><br><br>
+
+        <label for="niveau">Niveau:</label>
+        <input type="text" id="niveau" name="niveau" required><br><br>
+
+        <label for="nombreEtudiants">Nombre d'étudiants:</label>
+        <input type="number" id="nombreEtudiants" name="nombreEtudiants" required><br><br>
+
+        <input type="submit" value="Soumettre">
+    </form>
+</body>
+</html>

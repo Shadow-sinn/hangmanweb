@@ -1,0 +1,42 @@
+{{define "promo"}}
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Challenge 1</title>
+        <link rel="stylesheet"  href="/static/css/promo.css"/>
+    </head>
+    <body>
+        <div class="body">
+            <div>
+                <h2>Informations sur la promotion</h2>
+                <div class="info">
+                    <p class="stat"><strong>Nom :</strong> {{.PV.Nom}}</p>
+                    <p class="stat"><strong>Filière :</strong>  {{.PV.Filiere}}</p>
+                    <p class="stat"><strong>Niveau :</strong>  {{.PV.Niv}}</p>
+                    <p class="stat"><strong>Nombre d'étudiant :</strong>  {{.PV.Nbr}}</p>
+                </div>
+            </div>
+            <div>
+                <h2>Liste des étudiants</h2>
+                {{range .Elv}}
+                <div class="container">
+                    <div class="pna">
+                        <p>{{.Prenom}} {{.Nom}}</p>
+                        <p class="age">{{.Age}}</p>
+                    </div>
+                    <div class="sx">
+                        {{if .Sexe}}
+                            <img class="img" src="/static/img/Male_symbol_(fixed_width).png" alt="signe male">
+                        {{else}}
+                            <img class="img" src="/static/img/female-34274_1280.png" alt="signe female">
+                        {{end}}
+                    </div>
+                </div>
+                {{end}}
+            </div>
+        </div>
+    </body>
+</html>
+{{end}}

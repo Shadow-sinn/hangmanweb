@@ -1,0 +1,22 @@
+{{define "change"}}
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Challenge 2</title>
+        <link rel="stylesheet"  href="/static/css/change.css"/>
+    </head>
+    <body>
+        <div class="container">
+        {{if .Check}}
+            <p class="parite">Le chiffre est pair</p> 
+            <p class="value">{{.Value}}</p>      
+        {{else}}
+            <p class="parite">Le chiffre est impair</p>  
+            <p class="value">{{.Value}}</p>  
+        {{end}}
+        </div>
+    </body>
+</html>
+{{end}}

@@ -1,0 +1,27 @@
+{{define "display"}}
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Challenge 3</title>
+        <link rel="stylesheet"  href="/static/css/display.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <p class="perso"><strong>Vos données personnelles</strong></p>
+            <div>
+            <p>Nom</p>
+            <p>{{.Nom}}</p>
+            <p>Prenom</p>
+            <p>{{.Prenom}}</p>
+            <p>Date de anniversaire</p>
+            <p>{{.Birthday}}</p>
+            <p>Sexe</p>    
+            <p>{{.Sexe}}</p>
+            </div>
+            
+        </div>
+    </body>
+</html>
+{{end}}
